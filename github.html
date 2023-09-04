@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Git</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="assets/CSS/styles.css">
+</head>
+
+<body>
+  <nav class="navbar bg-dark border-bottom border-body centro" , data-bs-theme="dark">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hospedagem.html">Hospedagem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="github.html">Git e GitHub</a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-link" href="githubpages.html">Github Pages</a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-link" href="portifolio.html">Portífolio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+<div class="fundo">
+  <h1 class="h1 centro">Git e Github</h1>
+  <div class="quebra">
+    <p class="centro">Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de
+      software,
+      mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p>
+  </div>
+  <div class="centro">
+    <img src="assets/img/branch.png" alt="">
+  </div>
+  <h1 class="h1 centro">Github</h1>
+  <p class="centro">GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o
+    Git.
+    Ele permite que programadores,
+    utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de
+    qualquer lugar do mundo.</p>
+
+<h1 class="centro">Branchs</h1>
+  <p class="centro">É útil em situações nas quais você deseja
+    adicionar um novo recurso ou corrigir um erro,
+    gerando uma nova ramificação garantindo que o
+    código instável não seja mesclado nos arquivos
+    do projeto principal </p>
+  <div class="linha">
+    <div class="centro">
+    <img src="assets/img/gitflow.png" alt="" width="1000" height="550">
+  </div>
+  <h1 class="h1 centro">Configurando uma chave SSH </h1>
+  <p class="centro">Primeiro voce deve instalar o Git </p>
+  <link rel="stylesheet" href="https://git-scm.com/downloads">
+  <div class="linha">
+
+  </div>
+  <p class="centro">Verificar se existe chave ssh.</p>
+    <ul>
+     <li> ls -al ~/.ssh</li>
+   <li> Adicionar uma nova chave. (ID)</li>
+    <li>ssh-keygen -t ed25519 -C "seu_email@exemplo.com"</li>
+    <li>Inicializar agente-ssh.</li>
+    <li>eval "$(ssh-agent -s)"</li>
+    <li>Adicionar chave ssh ao agente.
+    ssh-add ~/.ssh/id_ed25519</li>
+  </ul> 
+  
+  <p class="centro">Gitbash </p>
+  <div class="linha">
+
+  </div>
+  <p class="centro">Copiar chave ssh.
+    clip < ~/.ssh/id_ed25519.pub
+    Adicionar chave no github
+    Github -> Settings -> SSH and GPG keys -> New SSH key -> Colar
+    *Coloque um título que identifique a chave*
+    Testar conexão
+    ssh -T git@github.com
+    yes </p>
+  <h1 class="centro">Comandos</h1>
+  <div class="linha">
+
+  </div>
+<div class="centro, fundo2">
+   <p style="color:RGB(153,0,255)">Comandos
+   <ul style="color:RGB(153,0,255)">
+  <li>  git status </li>
+  <li>  git add filename ou . filename filename ou .  </li>
+   <li> git restore --staged filename ou . > </li>
+   <li> git branch branchname </li>
+  <li> git checkout branchname </li>
+   <li> git checkout -b branchname</li>
+  <li>  git commit -m "description" </li>
+  <li>  git push </li>
+   <li> git branch -D branchname </li>
+  <li>  git fetch </li>
+ <li>git pull </li> </p>
+    </ul>
+  </div>
+<h1 class="centro">Branchs</h1>
+  <ul>
+<li>feat: Algo relacionado com features que você adicionar;</li>
+<li>fix: Algo para corrigir;</li>
+<li>docs: Algo relacionado a documentações, README e afins;</li>
+<li>style: Algo relacionado com estilização;</li>
+<li>refactor: Algo relacionado com refatoração(refazer);</li>
+<li>perf: Algo relacionado a performance;</li>
+<li>test: Algo com testes;</li>
+<li>chore: Algo para coisas relacionados a build, configs e afins. Exemplo: Use esse,
+  seja atualizando a versão do pacote ou instalando novas dependências.</li>
+
+  </ul>
+  <div class="linha"> </div>
+  <h1 class="centro"> </h1>
+  <p class="centro"> </p>
+</div>
+</body>
+
+</html>
